@@ -1,0 +1,90 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isErrorPage="true" %>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- to use google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <!--Add this Meta for bootstrap to work on mobile devices correctly---->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <title>Luxmart Food Delivery</title>
+
+     <!-- Bootstrap CSS-->
+      <link href="../resources/bootstrap_files/css/bootstrap.min.css" rel="stylesheet">
+    
+ 
+ 
+    <!-- Custom fonts for this template -->
+    <link href="../resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- for animations using bootstrap -->
+     <link href="../resources/css/animate.css" rel="stylesheet">
+     
+
+    <!-- Custom styles for this template -->
+    <link href="../resources/css/agency.css" rel="stylesheet">
+    
+     <link href="../resources/css/style.css" rel="stylesheet">
+     
+     
+       <!-- JQuery Library for dataTable -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <!-- Css for dataTable -->
+   <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+  
+     
+  </head>
+  
+<body id="page-top">
+  <!--  used to use function such as forEach in table -->
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+     
+   
+     
+
+<header class="container-fluid">
+<%@ include file="../include/errorNavbar.jsp" %>
+</header>
+
+<section class="container starter-template" >
+
+
+	<div class="row justify-content-center errorPage">
+	
+	
+<div class="alert alert-danger">
+<span class="h4">Opps!</span><br />
+<p>There seems to be a problem with the page you requested.
+<a href="/index">Back To Home</a>
+</p>
+
+<c:forEach items="${errors}" var="error">
+    <%-- do want you want with ${error} --%>
+    <c:out value="${error.defaultMessage}" />
+</c:forEach>
+
+</div>
+
+
+</div>
+	
+	
+</section>
+
+
+  <%@ include file="../include/footer.jsp" %>

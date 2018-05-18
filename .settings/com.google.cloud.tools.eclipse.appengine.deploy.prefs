@@ -1,0 +1,9 @@
+account.email=marcysmelin@gmail.com
+app.yaml.path=src/main/appengine/app.yaml
+eclipse.preferences.version=1
+include.optional.configuration.files=true
+project.bucket=
+project.id=java-177702
+project.previousVersion.stop=true
+project.promote=true
+project.version=

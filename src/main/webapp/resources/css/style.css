@@ -1,0 +1,245 @@
+
+body {	
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 2rem; 	
+	
+ 
+	
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+}
+
+
+
+* {
+    box-sizing: border-box
+}
+
+#address, #btnSearch {
+	
+	height: 50px;
+}
+
+
+   div#map{
+      width: 100%;
+      height: 324px;
+      }
+      
+      .panel-default {
+      width: 403px;
+      height: 750px;
+      }
+      .clearColor {
+      rgba(34,34,34,0.76)
+      }
+      
+
+.gridRestaurants {
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+}
+
+.gridRestaurants:hover {
+	
+	 border: 1px solid #ff0000;
+}
+
+.grid {
+    min-height: 90px;
+}
+
+.gridRestaurantsChildren {
+	
+	padding:10px;
+   
+}
+
+.gridRestaurantsChildren2 {
+	
+	padding:20px 20px 0px 15px;
+   
+}
+
+.restItems li {
+list-style: none;
+
+}
+
+#list-about {
+	
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+#list-about li {
+	padding-top:10px;
+	
+}
+
+
+#RestNav {
+  background-color: #fff;  
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08); 
+  padding-right : 0px;
+  padding-left : 0px;
+
+  }
+  #RestNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #ff1047;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; 
+     }
+  #RestNav .navbar-brand {
+    color: #ff1047;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    #RestNav .navbar-brand.active, #RestNav .navbar-brand:active, #RestNav .navbar-brand:focus, #RestNav .navbar-brand:hover {
+      color: #ff1010; }
+  #RestNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: #ff1047;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    #RestNav .navbar-nav .nav-item .nav-link.active, #RestNav .navbar-nav .nav-item .nav-link:hover {
+      color: #ff1010; }
+
+@media (min-width: 992px) {
+  #RestNav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #fff; 
+    }
+    #RestNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #RestNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #RestNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #fff;
+     
+       
+      }
+      #RestNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; 
+        
+        
+       }
+       
+       
+       #mapContainer{
+       display: none;
+       }
+     /*Down arrow*/
+      .down-button {
+       position: absolute;
+       bottom: 20px;
+       width:  100%;
+       text-align: center;
+       
+       }
+    #carousel {
+    margin: 0;
+  
+   
+    }
+    #carousel img {    
+    width: 100%;
+    height: auto;
+      box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08); 
+    }
+   .carousel-inner{
+   margin-top: 0px;
+   padding-top: 0px;
+  
+   }
+   
+   /*style for navbar textBox*/
+   #searchRest_tb {
+   border-radius: 25px;
+   -webkit-transition: width 0.7s ease-in-out;
+   -moz-transition: width 0.7s ease-in-out;
+   -ms-transition: width 0.7s ease-in-out;
+   -o-transition: width 0.7s ease-in-out;
+    transition: width 0.7s ease-in-out;
+   }
+   
+     #searchRest_tb:focus {
+     width: 500px;
+     }
+     
+     #page_cart{
+     
+     border: 1px solid grey;     
+     text-align: left;    
+     background-image: url("../Images/Background_Images/cart_icon.png");
+     background-repeat: no-repeat;
+     background-position: center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    
+ 
+
+     }
+     
+     #page_product {
+     border: 1px solid grey;      
+   
+     }
+     
+     a {     
+     text-decoration:  none;
+     }
+    
+     a:hover {
+     text-decoration:  none;
+     }
+
+#quantityPickerDiv{
+	
+	width: 30px;
+}
+
+   
+    #addProductOptionsDiv {
+    display: none;
+    }
+    
+    
+    #servicesAbout{
+    padding-top: 100px;
+    padding-bottom: 100px;
+        }
+        #receiptBox{
+        
+        padding:15px;
+        margin:10px;
+        border:1px solid grey;
+        }
+       
+        
